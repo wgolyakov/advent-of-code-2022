@@ -43,6 +43,7 @@ fun main() {
 			snafu.insert(0, s.last())
 			r = if (s.length > 1) s[0].digitToInt() else 0
 		} while (n > 0)
+		if (r != 0) snafu.insert(0, toSnafuDigit[r]!!)
 		return snafu.toString()
 	}
 
